@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[table,xcdraw]{xcolor}
+
+% for Polish language
+\usepackage[T1]{fontenc}
+
+% for figures
+\usepackage{graphicx}
+
+% For the Gantt chart
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{colortbl}
+\usepackage{tabulary}
+\usepackage{etoolbox}
+\newcommand{\bcell}{\cellcolor[HTML]{000000}}
+\newcommand{\gcell}{\cellcolor[HTML]{808080}}
+
+% For the bibliography
+\renewcommand{\refname}{Project literature}
+
+% For the latex numbering
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+% For URLs
+\usepackage{hyperref}
+
+% For footnotes in tables
+\usepackage{tablefootnote}
+
+% For the margins
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\title{Individual Research Plan}
+\author{John Brown}
+\date{August 2022}
+
+\begin{document}
+
+\maketitle
+% \tableofcontents
+
+\input{sections/1_2_3_4_basic_data}
+\input{sections/5_justification_for_choosing_the_topic}
+\input{sections/6_outline_of_the_current_state_of_research}
+\input{sections/7_research_questions_and_hypotheses}
+\input{sections/8_contribution_of_the_expected_results_to_the_discipline}
+\input{sections/9_planned_research_methods}
+\input{sections/10_abstract_for_general_public}
+\input{sections/11_12_13_14_ending}
+
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+\end{document}
